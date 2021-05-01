@@ -1,0 +1,516 @@
+/* Подключение шрифта */
+@font-face {
+  font-family: 'Gilroy light';
+  src: local('Gilroy Light'), local('Gilroy-Light'), url('./gilroy/Gilroylight.woff2') format('woff2'), url('./gilroy/Gilroylight.woff') format('woff'), url('./gilroy/Gilroylight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('./gilroy/Gilroyextrabold.woff2') format('woff2'), url('./gilroy/Gilroyextrabold.woff') format('woff'), url('./gilroy/Gilroyextrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy Medium';
+  src: local('Gilroy Medium'), local('Gilroy-Medium'),
+      url('./gilroy/Gilroy-Medium.woff2') format('woff2'),
+      url('./gilroy/Gilroy-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+/* ===================== */
+
+:root {
+
+  /* Colors: */
+  --primary-color: #E64A31;
+  
+  /* Font/text values */
+  --unnamed-font-family-gilroy: Gilroy;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-bold: bold;
+  --unnamed-font-weight-medium: medium;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-22: 22px;
+  --unnamed-font-size-30: 30px;
+  --unnamed-font-size-46: 46px;
+  --unnamed-font-size-62: 62px;
+  --unnamed-character-spacing-0: 0px;
+  --unnamed-line-spacing-19: 19px;
+  --unnamed-line-spacing-28: 28px;
+  --unnamed-line-spacing-38: 38px;
+  --unnamed-line-spacing-57: 57px;
+  --unnamed-line-spacing-77: 77px;
+  }
+  
+  /* Character Styles */
+  .h1-62pt {
+  font-family: var(--unnamed-font-family-gilroy);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-62);
+  line-height: var(--unnamed-line-spacing-77);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+  }
+  .h2-—-46pt {
+  font-family: var(--unnamed-font-family-gilroy);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-46);
+  line-height: var(--unnamed-line-spacing-57);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+  }
+  .h3-—-30pt {
+  font-family: var(--unnamed-font-family-gilroy);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-30);
+  line-height: var(--unnamed-line-spacing-38);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  }
+  .h4-—-22pt {
+  font-family: var(--unnamed-font-family-gilroy);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-22);
+  line-height: var(--unnamed-line-spacing-28);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+  }
+  .body-—-16pt {
+  font-family: var(--unnamed-font-family-gilroy);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-16);
+  line-height: var(--unnamed-line-spacing-19);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  }
+
+/* Общиее классы */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Gilroy normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:#FFFFFF
+}
+a{
+  text-decoration: none;
+}
+h1{
+  margin: 0;
+}
+.pt-160 {
+  padding-top: 160px;
+}
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+.pt-20{
+  padding-top: 20px;
+}
+.pt-35 {
+  padding-top: 35px;
+}
+.pt-60{
+  padding-top: 60px;
+}
+.pt-90{
+  padding-top: 90px;
+}
+.pt-200{
+  padding-top: 200px;
+}
+.pt-300{
+  padding-top: 300px;
+}
+.pb-15{
+  padding-bottom: 15px;
+}
+.pb-30{
+  padding-bottom: 30px;
+}
+.pb-40{
+  padding-bottom: 40px;
+}
+.pb-60{
+  padding-bottom: 60px;
+}
+.pb-100{
+  padding-bottom: 100px;
+}
+.pb-200{
+  padding-bottom: 200px;
+}
+.pb-240{
+  padding-bottom: 240px;
+}
+.text{
+  font-family: 'Gilroy Medium';
+}
+.title-h3{
+  font-family: 'Gilroy bold';
+  font-size: 22px;
+}
+.title_h6{
+  font-size: 16px;
+}
+.btn {
+  color: #FFFFFF;
+  position: relative;
+  place-content: center;
+  place-items: center;
+  width: fit-content;
+  border-radius:10px;
+  letter-spacing: 0.05em;
+  border: none;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 1rem 2.5rem;
+  white-space: nowrap;
+  font-weight: 700;
+  outline: none;
+  transition: all 0.22s;
+  font-family: 'Gilroy bold';
+  font-size: 14px;
+}
+.btn.big{
+  width: 90%;
+  margin: 0 auto;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 1!important;
+  background: #eee!important;
+  border-color: #ddd!important;
+  color: #999!important;
+}
+
+.btn:active {
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.btn.primary{
+  background-color: #E64A31;
+}
+.btn.secondary{
+  background-color: transparent;
+}
+
+/* ============= */
+
+
+
+/* Стилизация блока Header */
+.container_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 20000;
+}
+.header__logo{
+  text-align: left;
+  font-family: 'Gilroy Bold';
+  font-size: 29px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.menu__item {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'Gilroy Bold';
+  font-size: 14px;
+}
+.menu__item:first-child{
+  margin-left: unset;
+}
+.menu__item:hover{
+  color: #E64A31;
+}
+.menu__item_active{
+  color: #E64A31;
+}
+/* ====================== */
+
+/* Стилизация блока Description */
+.description{
+  background: url('../img/BG\ 1st\ page@2x.png');
+  background-size: cover;
+  opacity: 1;
+}
+.title{
+  margin: 0;
+  font-family: 'Gilroy Bold';
+}
+.title_h1{
+  font-size: 62px;
+}
+.colored{
+  color: #E64A31;
+  text-decoration: none;
+  font-size: inherit;
+}
+
+.description__text{
+  text-align: left;
+  max-width: 400px;
+}
+.buttons-block{
+  display: flex;
+
+}
+.btn_with_img{
+  display: flex;
+  align-items: center;
+}
+.btn__span{
+  margin-left: 10px;
+}
+.description_footer__list{
+  max-width: 740px;
+  display: flex;
+  justify-content: space-between;
+}
+.description_footer__list li {
+  list-style: none;
+  font-family: 'Gilroy Bold';
+  font-size: 14px;;
+}
+.description_footer__list li::before{
+  content: "\2022";
+  color: #718A44;
+  font-weight: bold;
+  display: inline-block; 
+  width: 7px;
+  margin-right: 16px;
+}
+/* ====================== */
+
+/* Стилизация блока Advantages */
+.advantages{
+  background-image: url(../img/BG\ 2st\ page.png);
+  background-size: cover;
+
+}
+.title_h2{
+  font-size: 46px;
+}
+.title_h4 {
+  font-size: 30px;
+}
+.container_cards{
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  max-width: 400px;
+  background-color: #171818;
+}
+.card_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card_text{
+  font-size: 16px;
+  color: #BCBCBC;
+}
+/* ====================== */
+
+/* Стилизация блока Promo */
+.promo{
+  background-image: url(../img/BG\ 3st\ page.png);
+  background-size: cover;
+}
+.promo__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text_block{
+  max-width: 400px;
+}
+/* ====================== */
+
+/* Стилизация блока Functional Description */
+.functional_description{
+  background-color: black;
+}
+.functional_description__header{
+  background-image: url(../img/Mask\ Group\ 5.png);
+  background-size: cover;
+}
+.functional_description_main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.functional_description_h4{
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
+.functional_description_main__list{
+  list-style: none;
+}
+.wallhack_card{
+  max-width: 600px;
+  width: 50%;
+  min-width: 540px;
+  padding-bottom: 150px;
+}
+/* ====================== */
+
+/* Стилизация блока Carusel */
+.carusel_block{
+  background-image: url(../img/BGScreens.png);
+  background-size: cover;
+}
+.wrap{
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 300px;
+}
+.slider{
+  width: 100%;
+  margin: 0 auto;
+  overflow: visible;
+}
+.img{
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  margin-left: 20px;
+  background-size: cover;
+  background-position: center;
+}
+.img:first-child{
+  margin-left: unset;
+}
+.case1{
+  background-image: url(../img/carusel/case_9.png);
+}
+.case2{
+  background-image: url(../img/carusel/Mask\ Group\ 6.png);
+}
+.slick-prev, .slick-next{
+  width: 60px;
+}
+.slick-prev{
+  left: -50px;
+}
+.slick-next{
+  right: -50px;
+}
+
+.main_slide{
+  width: 100%;
+  height: 520px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.img_main{
+  margin: 0 auto;
+  width: 100%;
+  height: 520px;
+  background-size: cover;
+}
+/* ======================= */
+/* Стилизация блока Subscription */
+.subscription_price{
+  background-image: url(../img/BG\ 4st\ page.png);
+  background-size: cover;
+}
+.subscription_price_header{
+  display: flex;
+  justify-content: space-between;
+}
+.subscription_price_header_text{
+  max-width: 580px;
+}
+.oplata-info{
+  background-color: #3E3E3E;
+}
+.subscription_price_main{
+  display: flex;
+  justify-content: space-between;
+}
+.subscription_price_main_card{
+  max-width: 400px;
+  background-color: #171818;
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header_span{
+  font-size: 16px;
+}
+.subscription_price_main_card span b{
+  font-size: 22px;
+}
+.card_line{
+  background-color: #E64A31;
+  color: #E64A31;
+  width: 21px;
+  border: none;
+  height: 2px;
+}
+.sub_card_list{
+  list-style: none;
+  
+}
+ion-icon{
+  color: #BCBCBC;
+}
+/* ======================== */
+
+/* Стилизация блока Subscription */
+.footer_container{
+  background-image: url(../img/SQysl2d7HNA@2x.png);
+  background-size: cover;
+}
+.footer_container__text{
+  max-width: 500px;
+}
+/* ======================== */
+
+/* Стилизация страницы Confirm */
+.confirm-payment{
+  background-image: url(../img/l6gXRY96KoM.png);
+  background-size: cover;
+  height: 100vh;
+}
+.confirm-payment_text{
+  max-width: 352px;
+}
+.confirm-payment_input{
+  width: 352px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.confirm-payment_input::placeholder {
+  font-family: 'Gilroy Medium';
+  color: #BCBCBC;
+  font-size: 16px;
+}
+/* ======================== */
