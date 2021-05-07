@@ -10,14 +10,32 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
 </head>
 <body>
   <header>
+    <div class="menu-hamburger">
+      <span class="toggle-button">
+        <div class="menu-bar menu-bar-top"></div>
+        <div class="menu-bar menu-bar-middle"></div>
+        <div class="menu-bar menu-bar-bottom"></div>
+      </span>
+      <div class="menu-wrap">
+        <div class="menu-sidebar">
+            <ul class="menu-mobile">
+                <li><a class="menu-mobile-link" href="#functional">Функционал</a></li>
+                <li><a class="menu-mobile-link" href="#">Форум</a></li>
+                <li><a class="menu-mobile-link" href="#">Отзывы</a></li>
+                <li><a class="menu-mobile-link" href="#">Контакты</a></li>
+                <li><a class="menu-mobile-link" href="#">RU/ENG</a></li>
+            </ul>           
+        </div>
+      </div>
+    </div>
     <div class="container container_header pt-35">
       <div class="header__logo">Battle Cheats</div>
       <nav class="menu">
-        <a class="menu__item " href="#">Функционал</a> 
+        <a class="menu__item " href="#functional">Функционал</a> 
         <a class="menu__item " href="#">Форум</a> 
         <a class="menu__item " href="#">Отзывы</a> 
         <a class="menu__item " href="#">Контакты</a> 
@@ -97,7 +115,7 @@
         </div>
       </div>
     </section>
-    <section class="functional_description pt-60">
+    <section id="functional" class="functional_description pt-60">
       <div class="functional_description__header container">
         <h4 class="title title_h4 pt-300 functional_description_h4">Описание функционала нашего чита</h4>
       </div>
@@ -188,13 +206,22 @@
       <div class="container ">
         <h1 class="title title_h1 pt-90 pb-100">Скриншоты нашего чита</h1>
         <div class="wrap">
-          <div class="main_slide">
-            <div class="img_main case1"></div>
-            <div class="img_main case2"></div>
-            <div class="img_main case1"></div>
-            <div class="img_main case2"></div>
-            <div class="img_main case1"></div>
+          <div class="main_slider_wrap">
+            <button class="secondary previos">
+              <ion-icon class="arrow" name="chevron-back"></ion-icon>
+            </button>
+            <div class="main_slide">
+              <div class="img_main case1"></div>
+              <div class="img_main case2"></div>
+              <div class="img_main case1"></div>
+              <div class="img_main case2"></div>
+              <div class="img_main case1"></div>
+            </div>
+            <button class="secondary next">
+              <ion-icon class="arrow" name="chevron-forward"></ion-icon>
+            </button>
           </div>
+          
           <div class="slider">
             <div class="img case1"></div>
             <div class="img case2"></div>

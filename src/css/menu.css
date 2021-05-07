@@ -1,0 +1,83 @@
+body{
+  margin: 0;
+}
+.toggle-button {
+  top: 5%;
+  right: 5%;
+  position: fixed;
+  width: 44px;
+  height: 40px;
+  padding: 4px;
+  transition: .25s;
+  z-index: 15;
+}
+.toggle-button:hover {
+  cursor: pointer;
+}
+.toggle-button .menu-bar {
+  position: absolute;
+  border-radius: 2px;
+  width: 80%;
+  transition: .5s;
+}
+.toggle-button .menu-bar-top {
+  border: 4px solid rgb(109, 108, 108);
+  border-bottom: none;
+  top: 0;
+}
+.toggle-button .menu-bar-middle {
+  height: 4px;
+  background-color: rgb(109, 108, 108);
+  margin-top: 7px;
+  margin-bottom: 7px;
+  top: 4px;
+}
+.toggle-button .menu-bar-bottom {
+  border: 4px solid rgb(109, 108, 108);
+  border-top: none;
+  top: 22px;
+}
+.button-open .menu-bar-top {
+  transform: rotate(45deg) translate(8px, 8px);
+  transition: .5s;
+}
+.button-open .menu-bar-middle {
+  transform: translate(230px);
+  transition: .1s ease-in;
+  opacity: 0;
+}
+.button-open .menu-bar-bottom {
+  transform: rotate(-45deg) translate(8px, -7px);
+  transition: .5s;
+}
+
+.menu-wrap {
+  background-color: #252527;
+  position: fixed;
+  padding-top: 5%;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  width: 100%;
+  font-size: 1em;
+  font-weight: 700;
+  overflow: auto;
+  transition: 1.25s;
+  z-index: 10;
+}
+.menu-show {
+  left: 0;
+  box-shadow: 4px 2px 15px 1px #B9ADAD;
+}
+.menu{
+  list-style: none;
+}
+.menu li{
+  padding-bottom: 30px;
+}
+a{
+  text-decoration: none;
+  font-family: Gilroy normal;
+  font-size: 20px;
+  color: #FFFFFF;
+}
