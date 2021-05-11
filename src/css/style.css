@@ -346,6 +346,7 @@ header{
   background-size: cover;
 }
 .promo__container{
+  width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -414,9 +415,13 @@ header{
 }
 .case1{
   background-image: url(../img/carusel/case_9.png);
+  background-size: cover;
+  background-position: center;
 }
 .case2{
   background-image: url(../img/carusel/Mask\ Group\ 6.png);
+  background-size: cover;
+  background-position: center;
 }
 .slick-prev, .slick-next{
   width: 60px;
@@ -438,8 +443,6 @@ header{
   margin: 0 auto;
   width: 100%;
   height: 520px;
-  background-size: cover;
-  background-position: center;
 }
 .arrow{
   font-size: 52px;
@@ -447,7 +450,36 @@ header{
 .main_slider_wrap{
   display: flex;
 }
-
+    /* Модалка */
+    .popup-fade:before {
+      content: '';
+      background: #000;
+      position: fixed; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%;
+      opacity: 0.7;
+      z-index: 9999;
+    }
+    .popup-fade{
+      display: none;
+    }
+    .popup {
+      position: fixed;
+      top: 0%;
+      left: 10%;
+      width: 80%;
+      height: 100%;
+      z-index: 99999;
+      opacity: 1;
+    }
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    /* ====== */
 /* ======================= */
 /* Стилизация блока Subscription */
 .subscription_price{
@@ -622,14 +654,6 @@ ion-icon{
 }
 /* ======================== */
 
-@media (max-width:1400px) {
-  .promo__container{
-    width: 70%;
-  }
-}
-@media (max-width:1200px) {
-  
-}
 @media (max-width:992px) {
 
   .buttons-block{
@@ -804,9 +828,6 @@ ion-icon{
   .menu-hamburger{
     display: block;
   }
-  /* .menu__item{
-    font-size: 5px;
-  } */
   .header__logo{
     font-size: 20px;
   }
@@ -821,7 +842,13 @@ ion-icon{
     flex-direction: column;
   }
   .card_header{
-    justify-content: space-evenly;
+    justify-content: flex-start;
+  }
+  .card_header h4{
+    text-align: left;
+  }
+  .card_header img{
+    display: none;
   }
   .card_text{
     font-size: 14px;
@@ -871,4 +898,14 @@ ion-icon{
   .confirm-payment_input{
     width: 90%;
   }
+  .confirm-payment .title_h6{
+    text-align: left;
+  }
+}
+
+.modal{
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  
 }
