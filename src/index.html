@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/slick/slick-theme.css">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
-  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
 </head>
 <body>
@@ -245,9 +245,9 @@
             <h2 class="title title_h2">Выбери лучшую подписку и <span class="colored">начни побеждать</span></h2>
             <p class="text card_text pt-35" >После покупки вы попадаете на форму регистрации в приватном проекте, не забудьте посмотреть видео перед покупкой чтобы сделать всё правильно.</p>
           </div>
-          <div class="buttons_block">
-            <button class="btn primary">Оплатить через сайт</button>
-            <button class="btn oplata-info">oplata.info</button>
+          <div id="toggle" class="buttons_block">
+            <button id="localWebSite" class="btn oplata-info primary">Оплатить через сайт</button>
+            <button id="oplataInfo" class="btn oplata-info">oplata.info</button>
           </div>
         </div>
         <div class="subscription_price_main pt-90 pb-240">
@@ -261,7 +261,10 @@
               <li class="pb-15"><ion-icon name="checkmark-done-sharp"></ion-icon> Индивидуальная привязка к вашему PC</li>
               <li><ion-icon name="checkmark-done-sharp"></ion-icon> Опытная тех-поддержка</li>
             </ul>
-            <button class="btn primary big pb-30">Попробовать сейчас!</button>
+            <a class="payment-link" href="confirm.html">
+              <button class="btn primary big pb-30">Попробовать сейчас!</button>
+            </a>
+            
           </div>
           <div class="subscription_price_main_card">
             <span class="header_span"> <b>368₽</b>  / 30 дней</span>
@@ -273,7 +276,9 @@
               <li class="pb-15"><ion-icon name="checkmark-done-sharp"></ion-icon> Индивидуальная привязка к вашему PC</li>
               <li><ion-icon name="checkmark-done-sharp"></ion-icon> Опытная тех-поддержка</li>
             </ul>
-            <button class="btn primary big pb-30">Попробовать сейчас!</button>
+            <a class="payment-link" href="confirm.html">
+              <button class="btn primary big pb-30">Попробовать сейчас!</button>
+            </a>
           </div>
           <div class="subscription_price_main_card">
             <span class="header_span"> <b>368₽</b>  / 30 дней</span>
@@ -285,7 +290,9 @@
               <li class="pb-15"><ion-icon name="checkmark-done-sharp"></ion-icon> Индивидуальная привязка к вашему PC</li>
               <li><ion-icon name="checkmark-done-sharp"></ion-icon> Опытная тех-поддержка</li>
             </ul>
-            <button class="btn primary big pb-30">Попробовать сейчас!</button>
+            <a class="payment-link" href="confirm.html">
+              <button class="btn primary big pb-30">Попробовать сейчас!</button>
+            </a>
           </div>
         </div>
       </div>

@@ -67,4 +67,17 @@ $(document).ready(function($) {
 });
 
 
+$(document).ready(function() {
+  $('#toggle').on('click', '.btn',function() {
+    $(this).addClass('primary').siblings().removeClass('primary')
+    if($(this).attr('id') === 'localWebSite') {
+      console.log($('.payment-link').attr('href'))
+      $('.payment-link').prop('href', 'confirm.html')
+    } else {
+      $('.payment-link').prop('href', 'https://webref.ru')
+    }
+  })
+})
+
+
 
