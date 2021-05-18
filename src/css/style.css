@@ -222,7 +222,7 @@ h1{
 
 /* Стилизация блока Header */
 .container_header {
-  padding-right: 10px;
+  /* padding-right: 10px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -258,7 +258,7 @@ header{
 
 /* Стилизация блока Description */
 .description{
-  background: url('../img/workcart1.png');
+  background: url('../img/44.png');
   background-size: cover;
   opacity: 1;
 }
