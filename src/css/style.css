@@ -229,13 +229,13 @@ h1{
 }
 header{
   width: 100%;
-  position: fixed;
+  position: absolute;
   z-index: 20000;
 }
 .header__logo{
   width: 3.5rem;
   height: 3.5rem;
-  background-image: url(../img/logo\ no\ bg\ копия.png);
+  background-image: url(../img/logo\ no\ bg2.png);
   background-size: cover;
 }
 .menu__item {
