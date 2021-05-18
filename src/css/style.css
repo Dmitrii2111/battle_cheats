@@ -212,7 +212,9 @@ h1{
 .secondary{
   background-color: transparent;
   border: none;
+  width: 50px;
 }
+
 
 /* ============= */
 
@@ -220,6 +222,7 @@ h1{
 
 /* Стилизация блока Header */
 .container_header {
+  padding-right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -230,11 +233,10 @@ header{
   z-index: 20000;
 }
 .header__logo{
-  text-align: left;
-  font-family: 'Gilroy Bold';
-  font-size: 29px;
-  color: #FFFFFF;
-  opacity: 1;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-image: url(../img/logo\ no\ bg\ копия.png);
+  background-size: cover;
 }
 .menu__item {
   margin-left: 40px;
@@ -256,7 +258,7 @@ header{
 
 /* Стилизация блока Description */
 .description{
-  background: url('../img/BG\ 1st\ page@2x.png');
+  background: url('../img/workcart1.png');
   background-size: cover;
   opacity: 1;
 }
@@ -447,6 +449,10 @@ header{
 .arrow{
   font-size: 52px;
 }
+ion-icon{
+
+  font-size: 52px;
+}
 .main_slider_wrap{
   display: flex;
 }
@@ -524,11 +530,15 @@ header{
 }
 .sub_card_list{
   list-style: none;
-  
 }
-ion-icon{
-  color: #BCBCBC;
+.sub_card_list li{
+  padding-left: 20px;
+  background-image: url(../img/checkmark-sharp.svg);
+  background-repeat: no-repeat;
+  background-size:1rem;
+  background-position:0 center
 }
+
 /* ======================== */
 
 /* Стилизация блока Subscription */
@@ -830,7 +840,8 @@ ion-icon{
     display: block;
   }
   .header__logo{
-    font-size: 20px;
+    width: 2rem;
+    height: 2rem;
   }
   .description__text{
     font-size: 14px;

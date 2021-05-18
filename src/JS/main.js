@@ -76,10 +76,19 @@ $(document).ready(function() {
       $('.payment-link').prop('href', 'https://webref.ru')
     }
     if($(this).attr('href') != undefined && $(this).attr('href') != '') {
-      console.log('work')
       var el = $(this)
       var dest = el.attr('href')
-      console.log(dest)
+      $('html').animate({
+        scrollTop:
+        $(dest).offset().top
+      }, 500);
+    }
+    return false
+  })
+  $('.menu__item').on('click', function() {
+    if($(this).attr('href') != undefined && $(this).attr('href') != '') {
+      var el = $(this)
+      var dest = el.attr('href')
       $('html').animate({
         scrollTop:
         $(dest).offset().top
